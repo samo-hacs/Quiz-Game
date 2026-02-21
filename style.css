@@ -1,0 +1,242 @@
+:root {
+    /* Backgrounds */
+    --background-primary: #1C1C2B;   /* App background */
+    --background-secondary: #26263A; /* Cards / containers */
+    --background-hover: #2F2F46;     /* Hover surfaces */
+
+    /* Text */
+    --text-color: #F5F7FA;           /* Primary text */
+    --text-muted: #C7CAD8;           /* Secondary text */
+
+    /* Primary Action */
+    --buttons-color: #FF6B6B;        /* Main buttons */
+    --button-hover: #FF8787;         /* Button hover */
+    --button-active: #E85A5A;        /* Button active */
+
+    /* Borders */
+    --border-color: #3B3B5C;         /* Default borders */
+
+    /* Feedback */
+    --feedback-color: #4ECDC4;       /* Correct / success */
+    --feedback-bg: rgba(78, 205, 196, 0.15);
+
+    /* Errors / Wrong answers */
+    --error-color: #FF6B6B;
+    --error-bg: rgba(255, 107, 107, 0.15);
+
+    /* Warnings */
+    --warning-color: #FFE66D;
+
+    /* Progress */
+    --progress-track: #2A2A3D;
+    --progress-fill: #4ECDC4;
+}
+
+
+/* Basic Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+    font-family: sans-serif;
+}
+
+.container{
+    background-color: var(--background-secondary);
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* SCREENS */
+.screen {
+    display: none;
+    padding: 2rem;
+    text-align: center;
+} 
+
+.screen.active {
+    display: block;
+}
+
+/* START SCREEN */
+
+#start-screen h1{
+    color: var(--text-color);
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+#start-screen p{
+    color: var(--text-color);
+    margin-bottom: 30px;
+    font-size: 1.1rem
+}
+
+.quiz-header{
+    margin-bottom: 2rem;
+}
+
+#question-text{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.4rem;
+}
+
+.quiz-info{
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-muted);
+    margin-bottom: 10px;
+}
+
+.answers-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.answers-btn{
+    background-color: var(--background-secondary);
+    color: var(--text-color);
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.answers-btn:hover {
+    background-color: var(--background-hover);
+    border-color: var(--buttons-color);
+}
+
+
+.answers-btn.correct {
+    background-color: var(--feedback-bg);
+    border-color: var(--feedback-color);
+    color: var(--text-color);
+}
+
+.progress-bar{
+    height: 10px;
+    background-color: var(--progress-track);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.progress{
+    height: 100%;
+    background-color:  var(--progress-fill);
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+
+/* RESULT SCREEN */
+
+#result-screen h1{
+    color: var(--text-color);
+    margin-bottom: 30px;
+}
+
+.result-info{
+    background-color: var(--background-secondary);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.result-info p{
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+#result-message{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+button{
+    background-color: var(--buttons-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover{
+    background: var(--button-hover);
+}
+
+button:active{
+    background-color: var(--button-active);
+}
+
+
+@media (max-width: 500px){
+    /* when hit 500px and below, implement the styles below */
+
+    .screen{
+        padding: 1rem;
+    }
+
+    #start-screen h1{
+        font-size: 1rem;
+    }
+
+    #question-text{
+        font-size: 2rem;
+    }
+    .answers-btn {
+        padding: 12px;
+    }
+
+    button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
