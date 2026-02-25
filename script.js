@@ -16,29 +16,29 @@ const progressBar = document.getElementById("progress");
 
 const quizQuestions = [
     {
-        question: "Who is Said Abdallah?",
+        question: "What is the capital of France?",
         answers: [
-            {text: "Form 2D student", correct: true},
-            {text: "Form 1D student", correct: false},
-            {text: "Form 3D student", correct: false},
+            {text: "Paris", correct: true},
+            {text: "London", correct: false},
+            {text: "Washington, D.C.", correct: false},
         ],
     },
 
     {
-        question: "Who is Said Abdallah?",
+        question: "What is the capital of United Kingdom?",
         answers: [
-            {text: "Form 2D student", correct: true},
-            {text: "Form 1D student", correct: false},
-            {text: "Form 3D student", correct: false},
+            {text: "Washington, D.C", correct: false},
+            {text: "London", correct: true},
+            {text: "Paris", correct: false},
         ],
     },
 
     {
-        question: "Who is Said Abdallah?",
+        question: "What is the capital of Russia?",
         answers: [
-            {text: "Form 2D student", correct: true},
-            {text: "Form 1D student", correct: false},
-            {text: "Form 3D student", correct: false},
+            {text: "Brussels", correct: false},
+            {text: "Moscow", correct: true},
+            {text: "Berlin", correct: false},
         ],
     },
 ];
