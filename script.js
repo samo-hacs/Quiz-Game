@@ -18,27 +18,52 @@ const quizQuestions = [
     {
         question: "What is the capital of France?",
         answers: [
+<<<<<<< HEAD
             {text: "Paris", correct: true},
             {text: "London", correct: false},
             {text: "Washington, D.C.", correct: false},
+=======
+            {text: "Rome", correct: false},
+            {text: "Italy", correct: false},
+            {text: "Paris", correct: true},
+            {text: "London", correct: false},
+>>>>>>> a85fa70 (Saving local progress before pulling remote changes)
         ],
     },
 
     {
+<<<<<<< HEAD
         question: "What is the capital of United Kingdom?",
         answers: [
             {text: "Washington, D.C", correct: false},
             {text: "London", correct: true},
             {text: "Paris", correct: false},
+=======
+        question: "What is the capital of England?",
+        answers: [
+            {text: "Parin", correct: false},
+            {text: "London", correct: true},
+            {text: "Rome", correct: false},
+            {text: "Italy", correct: false},
+>>>>>>> a85fa70 (Saving local progress before pulling remote changes)
         ],
     },
 
     {
+<<<<<<< HEAD
         question: "What is the capital of Russia?",
         answers: [
             {text: "Brussels", correct: false},
             {text: "Moscow", correct: true},
             {text: "Berlin", correct: false},
+=======
+        question: "What is the capital of Italy?",
+        answers: [
+            {text: "Paris", correct: false},
+            {text: "Berlin", correct: false},
+            {text: "Rome", correct: true},
+            {text: "London", correct: false},
+>>>>>>> a85fa70 (Saving local progress before pulling remote changes)
         ],
     },
 ];
